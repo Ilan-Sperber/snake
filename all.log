@@ -1,0 +1,22 @@
+2021-04-04 23:18:29.062 [LWJGL Application] INFO  changeme.snake.GameLogic - GameLogic Init
+2021-04-04 23:18:29.072 [LWJGL Application] INFO  changeme.snake.GameLogic - Placed food at 34, 17
+2021-04-04 23:18:34.240 [LWJGL Application] INFO  changeme.snake.GameLogic - Food eaten at 34, 17
+2021-04-04 23:18:34.240 [LWJGL Application] INFO  changeme.snake.GameLogic - Placed food at 12, 2
+2021-04-04 23:18:38.559 [LWJGL Application] INFO  changeme.snake.GameLogic - Food eaten at 12, 2
+2021-04-04 23:18:38.560 [LWJGL Application] INFO  changeme.snake.GameLogic - Placed food at 30, 11
+2021-04-04 23:18:42.179 [LWJGL Application] INFO  changeme.snake.GameLogic - Food eaten at 30, 11
+2021-04-04 23:18:42.179 [LWJGL Application] INFO  changeme.snake.GameLogic - Placed food at 3, 16
+2021-04-04 23:18:46.849 [LWJGL Application] INFO  changeme.snake.GameLogic - Food eaten at 3, 16
+2021-04-04 23:18:46.850 [LWJGL Application] INFO  changeme.snake.GameLogic - Placed food at 37, 3
+2021-04-04 23:18:52.569 [LWJGL Application] INFO  changeme.snake.GameLogic - Food eaten at 37, 3
+2021-04-04 23:18:52.570 [LWJGL Application] INFO  changeme.snake.GameLogic - Placed food at 18, 18
+2021-04-04 23:18:56.538 [LWJGL Application] INFO  changeme.snake.GameLogic - Food eaten at 18, 18
+2021-04-04 23:18:56.539 [LWJGL Application] INFO  changeme.snake.GameLogic - Placed food at 32, 1
+2021-04-04 23:18:59.457 [LWJGL Application] INFO  changeme.snake.GameLogic - Player died going to 23, 0
+2021-04-04 23:18:59.458 [LWJGL Application] INFO  changeme.snake.GameLogic - Final length was 31
+2021-04-04 23:18:59.458 [LWJGL Application] INFO  changeme.snake.GameLogic - GameLogic Init
+2021-04-04 23:18:59.459 [LWJGL Application] INFO  changeme.snake.GameLogic - Placed food at 38, 10
+2021-04-04 23:19:03.417 [LWJGL Application] INFO  changeme.snake.GameLogic - Player died going to 39, 5
+2021-04-04 23:19:03.418 [LWJGL Application] INFO  changeme.snake.GameLogic - Final length was 1
+2021-04-04 23:19:03.418 [LWJGL Application] INFO  changeme.snake.GameLogic - GameLogic Init
+2021-04-04 23:19:03.419 [LWJGL Application] INFO  changeme.snake.GameLogic - Placed food at 33, 13

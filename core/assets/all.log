@@ -1,0 +1,50 @@
+2021-04-05 09:02:53.199 [LWJGL Application] INFO  changeme.snake.GameLogic - GameLogic Init
+2021-04-05 09:02:53.212 [LWJGL Application] INFO  changeme.snake.GameLogic - Placed food at 33, 18
+2021-04-05 09:02:58.116 [LWJGL Application] INFO  changeme.snake.GameLogic - Food eaten at 33, 18
+2021-04-05 09:02:58.116 [LWJGL Application] INFO  changeme.snake.GameLogic - Placed food at 14, 11
+2021-04-05 09:03:01.382 [LWJGL Application] INFO  changeme.snake.GameLogic - Food eaten at 14, 11
+2021-04-05 09:03:01.383 [LWJGL Application] INFO  changeme.snake.GameLogic - Placed food at 35, 18
+2021-04-05 09:03:07.451 [LWJGL Application] INFO  changeme.snake.GameLogic - Food eaten at 35, 18
+2021-04-05 09:03:07.451 [LWJGL Application] INFO  changeme.snake.GameLogic - Placed food at 8, 5
+2021-04-05 09:03:12.120 [LWJGL Application] INFO  changeme.snake.GameLogic - Food eaten at 8, 5
+2021-04-05 09:03:12.121 [LWJGL Application] INFO  changeme.snake.GameLogic - Placed food at 29, 11
+2021-04-05 09:03:15.272 [LWJGL Application] INFO  changeme.snake.GameLogic - Food eaten at 29, 11
+2021-04-05 09:03:15.272 [LWJGL Application] INFO  changeme.snake.GameLogic - Placed food at 4, 14
+2021-04-05 09:03:19.691 [LWJGL Application] INFO  changeme.snake.GameLogic - Food eaten at 4, 14
+2021-04-05 09:03:19.692 [LWJGL Application] INFO  changeme.snake.GameLogic - Placed food at 23, 6
+2021-04-05 09:03:20.510 [LWJGL Application] INFO  changeme.snake.GameLogic - Player died going to 5, 8
+2021-04-05 09:03:20.511 [LWJGL Application] INFO  changeme.snake.GameLogic - Final length was 31
+2021-04-05 09:03:20.511 [LWJGL Application] INFO  changeme.snake.GameLogic - GameLogic Init
+2021-04-05 09:03:20.512 [LWJGL Application] INFO  changeme.snake.GameLogic - Placed food at 27, 7
+2021-04-05 09:03:23.311 [LWJGL Application] INFO  changeme.snake.GameLogic - Food eaten at 27, 7
+2021-04-05 09:03:23.312 [LWJGL Application] INFO  changeme.snake.GameLogic - Placed food at 9, 16
+2021-04-05 09:03:26.462 [LWJGL Application] INFO  changeme.snake.GameLogic - Food eaten at 9, 16
+2021-04-05 09:03:26.463 [LWJGL Application] INFO  changeme.snake.GameLogic - Placed food at 29, 12
+2021-04-05 09:03:29.265 [LWJGL Application] INFO  changeme.snake.GameLogic - Food eaten at 29, 12
+2021-04-05 09:03:29.266 [LWJGL Application] INFO  changeme.snake.GameLogic - Placed food at 9, 18
+2021-04-05 09:03:32.967 [LWJGL Application] INFO  changeme.snake.GameLogic - Food eaten at 9, 18
+2021-04-05 09:03:32.968 [LWJGL Application] INFO  changeme.snake.GameLogic - Placed food at 33, 15
+2021-04-05 09:03:36.354 [LWJGL Application] INFO  changeme.snake.GameLogic - Food eaten at 33, 15
+2021-04-05 09:03:36.354 [LWJGL Application] INFO  changeme.snake.GameLogic - Placed food at 10, 15
+2021-04-05 09:03:40.656 [LWJGL Application] INFO  changeme.snake.GameLogic - Food eaten at 10, 15
+2021-04-05 09:03:40.657 [LWJGL Application] INFO  changeme.snake.GameLogic - Placed food at 34, 15
+2021-04-05 09:03:43.691 [LWJGL Application] INFO  changeme.snake.GameLogic - Food eaten at 34, 15
+2021-04-05 09:03:43.692 [LWJGL Application] INFO  changeme.snake.GameLogic - Placed food at 7, 12
+2021-04-05 09:03:47.193 [LWJGL Application] INFO  changeme.snake.GameLogic - Food eaten at 7, 12
+2021-04-05 09:03:47.194 [LWJGL Application] INFO  changeme.snake.GameLogic - Placed food at 30, 5
+2021-04-05 09:03:50.679 [LWJGL Application] INFO  changeme.snake.GameLogic - Food eaten at 30, 5
+2021-04-05 09:03:50.679 [LWJGL Application] INFO  changeme.snake.GameLogic - Placed food at 12, 17
+2021-04-05 09:03:54.183 [LWJGL Application] INFO  changeme.snake.GameLogic - Food eaten at 12, 17
+2021-04-05 09:03:54.184 [LWJGL Application] INFO  changeme.snake.GameLogic - Placed food at 38, 4
+2021-04-05 09:03:58.736 [LWJGL Application] INFO  changeme.snake.GameLogic - Food eaten at 38, 4
+2021-04-05 09:03:58.736 [LWJGL Application] INFO  changeme.snake.GameLogic - Placed food at 3, 17
+2021-04-05 09:04:04.572 [LWJGL Application] INFO  changeme.snake.GameLogic - Food eaten at 3, 17
+2021-04-05 09:04:04.573 [LWJGL Application] INFO  changeme.snake.GameLogic - Placed food at 22, 6
+2021-04-05 09:04:04.923 [LWJGL Application] INFO  changeme.snake.GameLogic - Player died going to 2, 19
+2021-04-05 09:04:04.924 [LWJGL Application] INFO  changeme.snake.GameLogic - Final length was 61
+2021-04-05 09:04:04.924 [LWJGL Application] INFO  changeme.snake.GameLogic - GameLogic Init
+2021-04-05 09:04:04.925 [LWJGL Application] INFO  changeme.snake.GameLogic - Placed food at 24, 16
+2021-04-05 09:04:08.425 [LWJGL Application] INFO  changeme.snake.GameLogic - Food eaten at 24, 16
+2021-04-05 09:04:08.426 [LWJGL Application] INFO  changeme.snake.GameLogic - Placed food at 3, 13
+2021-04-05 09:04:12.162 [LWJGL Application] INFO  changeme.snake.GameLogic - Food eaten at 3, 13
+2021-04-05 09:04:12.162 [LWJGL Application] INFO  changeme.snake.GameLogic - Placed food at 29, 5
