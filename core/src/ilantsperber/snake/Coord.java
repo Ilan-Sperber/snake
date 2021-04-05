@@ -1,4 +1,4 @@
-package changeme.snake;
+package ilantsperber.snake;
 
 public class Coord {
     private int x;

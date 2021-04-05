@@ -1,8 +1,0 @@
-2021-04-05 10:01:41.539 [LWJGL Application] INFO  changeme.snake.GameLogic - GameLogic Init
-2021-04-05 10:01:41.546 [LWJGL Application] INFO  changeme.snake.GameLogic - Placed food at 25, 16
-2021-04-05 10:01:45.216 [LWJGL Application] INFO  changeme.snake.GameLogic - Food eaten at 25, 16
-2021-04-05 10:01:45.216 [LWJGL Application] INFO  changeme.snake.GameLogic - Placed food at 5, 12
-2021-04-05 10:01:46.618 [LWJGL Application] INFO  changeme.snake.GameLogic - Player died going to 16, 19
-2021-04-05 10:01:46.618 [LWJGL Application] INFO  changeme.snake.GameLogic - Final length was 6
-2021-04-05 10:01:46.619 [LWJGL Application] INFO  changeme.snake.GameLogic - GameLogic Init
-2021-04-05 10:01:46.619 [LWJGL Application] INFO  changeme.snake.GameLogic - Placed food at 22, 17

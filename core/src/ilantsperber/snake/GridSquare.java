@@ -1,4 +1,4 @@
-package changeme.snake;
+package ilantsperber.snake;
 
 public enum GridSquare {
     EMPTY,

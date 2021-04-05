@@ -1,4 +1,4 @@
-package changeme.snake;
+package ilantsperber.snake;
 
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
@@ -13,7 +13,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
-import java.util.Locale;
 
 public class SnakeGame extends ApplicationAdapter {
 	private static final Logger logger = LogManager.getLogger(SnakeGame.class);
@@ -106,12 +105,6 @@ public class SnakeGame extends ApplicationAdapter {
 						batch.draw(img, drawAtPixel.x(), drawAtPixel.y());
 						break;
 					case HEAD:
-//						img = switch (game.getDirection()) {
-//							case NORTH -> atlas.findRegion("head-north");
-//							case EAST  -> atlas.findRegion("head-east");
-//							case SOUTH -> atlas.findRegion("head-south");
-//							case WEST  -> atlas.findRegion("head-west");
-//						};
 						img = atlas.findRegion("head-" + game.getDirection().name().toLowerCase());
 						batch.draw(img, drawAtPixel.x(), drawAtPixel.y());
 						break;
@@ -130,13 +123,13 @@ public class SnakeGame extends ApplicationAdapter {
 				if (dirQueue.size() > 0) {
 					Direction direction = dirQueue.remove(0);
 //					if (!((direction == Direction.NORTH && game.getDirection() == Direction.SOUTH) || (direction == Direction.EAST && game.getDirection() == Direction.WEST) || (di)))
-//					boolean shouldSwitch = switch (direction) {
-//						case NORTH -> game.getDirection() != Direction.SOUTH;
-//						case EAST  -> game.getDirection() != Direction.WEST;
-//						case SOUTH -> game.getDirection() != Direction.NORTH;
-//						case WEST  -> game.getDirection() != Direction.EAST;
-//					};
-					boolean shouldSwitch = !((direction == Direction.NORTH && game.getDirection() == Direction.SOUTH) || (direction == Direction.EAST && game.getDirection() == Direction.WEST) || (direction == Direction.SOUTH && game.getDirection() == Direction.NORTH) || (direction == Direction.WEST && game.getDirection() == Direction.EAST));
+					boolean shouldSwitch = switch (direction) {
+						case NORTH -> game.getDirection() != Direction.SOUTH;
+						case EAST  -> game.getDirection() != Direction.WEST;
+						case SOUTH -> game.getDirection() != Direction.NORTH;
+						case WEST  -> game.getDirection() != Direction.EAST;
+					};
+//					boolean shouldSwitch = !((direction == Direction.NORTH && game.getDirection() == Direction.SOUTH) || (direction == Direction.EAST && game.getDirection() == Direction.WEST) || (direction == Direction.SOUTH && game.getDirection() == Direction.NORTH) || (direction == Direction.WEST && game.getDirection() == Direction.EAST));
 					if (shouldSwitch)
 						game.setDirection(direction);
 				}

@@ -1,4 +1,4 @@
-package changeme.snake;
+package ilantsperber.snake;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -138,21 +138,11 @@ public class GameLogic {
     }
 
     public void move() {
-//        Coord toSquare = switch (direction) {
-//            case NORTH -> new Coord(head.x(), head.y() + 1);
-//            case SOUTH -> new Coord(head.x(), head.y() - 1);
-//            case EAST -> new Coord(head.x() + 1, head.y());
-//            case WEST -> new Coord(head.x() - 1, head.y());
-//        };
-
-        Coord toSquare;
-        switch (direction) {
-            case NORTH: toSquare = new Coord(head.x(), head.y() + 1); break;
-            case SOUTH: toSquare = new Coord(head.x(), head.y() - 1); break;
-            case EAST: toSquare = new Coord(head.x() + 1, head.y()); break;
-            case WEST: toSquare =  new Coord(head.x() - 1, head.y()); break;
-            default:
-                throw new IllegalStateException("Unexpected value: " + direction);
+        Coord toSquare = switch (direction) {
+            case NORTH -> new Coord(head.x(), head.y() + 1);
+            case SOUTH -> new Coord(head.x(), head.y() - 1);
+            case EAST  -> new Coord(head.x() + 1, head.y());
+            case WEST  -> new Coord(head.x() - 1, head.y());
         };
 
         Coord tailTo = tailBody.size() > 0 ? tailBody.get(tailBody.size() - 1).copy() : head.copy();

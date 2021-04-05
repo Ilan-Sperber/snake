@@ -1,9 +1,9 @@
-package changeme.snake.desktop;
+package ilantsperber.snake.desktop;
 
-import changeme.snake.GameLogic;
+import ilantsperber.snake.GameLogic;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
-import changeme.snake.SnakeGame;
+import ilantsperber.snake.SnakeGame;
 
 public class DesktopLauncher {
 	public static void main (String[] arg) {
