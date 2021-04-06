@@ -28,17 +28,17 @@ public class GameLogic {
     private boolean isPaused;
     private boolean isAlive;
 
-    public GameLogic(Coord starting) {
+    public GameLogic(Coord startingCoord) {
         logger.info("GameLogic Init");
 
-        board = new GridSquare[BOARD_WIDTH + 2][BOARD_HEIGHT + 2];
+        board = new GridSquare[BOARD_WIDTH][BOARD_HEIGHT];
         for (int x = 0; x < BOARD_WIDTH; x++)
             for (int y = 0; y < BOARD_HEIGHT; y++)
                 board[x][y] = (x == 0 || x == BOARD_WIDTH - 1 || y == 0 || y == BOARD_HEIGHT - 1) ? GridSquare.WALL : GridSquare.EMPTY;
 
         direction = Direction.EAST;
-        head = starting;
-        tail = new Coord(head.x() - 1, head.y());
+        head = startingCoord;
+        tail = new Coord(head.x() - 1, head.y()); // assuming its east
         board[head.x()][head.y()] = GridSquare.HEAD;
         board[tail.x()][tail.y()] = GridSquare.TAIL;
         placeFood();
@@ -75,18 +75,6 @@ public class GameLogic {
         isPaused = paused;
     }
 
-    public Coord getFood() {
-        return food;
-    }
-
-    public Coord getHead() {
-        return head;
-    }
-
-    public Coord getTail() {
-        return tail;
-    }
-
     public ArrayList<Coord> getTailBody() {
         return tailBody;
     }
@@ -115,7 +103,7 @@ public class GameLogic {
             }
         }
         if (index == -1) {
-            logger.fatal("Tried to get tail info on non tail tile at " + tailPiece);
+            logger.error("Tried to get tail info on non tail tile at " + tailPiece);
         }
         Coord front = index != 0 ? tailBody.get(index - 1) : head;
         Coord back = index != tailBody.size() - 1 ? tailBody.get(index + 1) : tail;
@@ -145,13 +133,9 @@ public class GameLogic {
             case WEST  -> new Coord(head.x() - 1, head.y());
         };
 
-        Coord tailTo = tailBody.size() > 0 ? tailBody.get(tailBody.size() - 1).copy() : head.copy();
-
-        Coord oldTail;
+        Coord oldTail = tail.copy();
         switch (toSquare.at2dGrid(board)) {
             case FOOD:
-                oldTail = tail.copy();
-
                 board[head.x()][head.y()] = GridSquare.TAIL;
 
 //                tail.setCoord(tailBody.remove(tailBody.size() - 1));
@@ -186,8 +170,6 @@ public class GameLogic {
                 logger.info("Final length was " + length);
                 break;
             case EMPTY:
-                oldTail = tail.copy();
-
                 board[head.x()][head.y()] = GridSquare.TAIL;
 
 ////                tail.setCoord(tailBody.remove(tailBody.size() - 1));

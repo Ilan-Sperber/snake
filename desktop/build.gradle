@@ -1,4 +1,3 @@
-sourceCompatibility = 1.14
 sourceSets.main.java.srcDirs = [ "src/" ]
 sourceSets.main.resources.srcDirs = ["../core/assets"]
 
@@ -30,7 +29,9 @@ task dist(type: Jar) {
     from {
         configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
     }
+    archiveFileName = "${appName}-${archiveVersion.get()}.${archiveExtension.get()}"
     with jar
+
 }
 
 

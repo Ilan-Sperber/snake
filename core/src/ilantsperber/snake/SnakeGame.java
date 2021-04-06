@@ -4,11 +4,11 @@ import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.graphics.GL20;
-import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.utils.TimeUtils;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -17,10 +17,9 @@ import java.util.ArrayList;
 public class SnakeGame extends ApplicationAdapter {
 	private static final Logger logger = LogManager.getLogger(SnakeGame.class);
 
-	private static final float MOVE_MILLISECONDS = 100;
+	private static final float MOVE_MILLISECONDS = 90;
 
 	private SpriteBatch batch;
-	private Texture img;
 
 	private TextureAtlas atlas;
 
@@ -35,10 +34,8 @@ public class SnakeGame extends ApplicationAdapter {
 		game = new GameLogic(new Coord(5, 5));
 
 		batch = new SpriteBatch();
-//		img = new Texture("badlogic.jpg");
-		atlas = new TextureAtlas("atlas.txt");
 
-		System.out.println(atlas.findRegion("head-north").getClass());
+		atlas = new TextureAtlas("atlas.txt");
 
 		lastMove = TimeUtils.nanoTime();
 		dirQueue = new ArrayList<>();
@@ -50,8 +47,7 @@ public class SnakeGame extends ApplicationAdapter {
 		Gdx.gl.glClearColor(0, 1, 2, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 		batch.begin();
-//		batch.draw(img, 0, 0);
-//		batch.draw(atlas.findRegion("tail-north-west"), 100, 100);
+
 		for (int x = 0; x < GameLogic.BOARD_WIDTH; x++) {
 			for (int y = 0; y < GameLogic.BOARD_HEIGHT; y++) {
 				TextureRegion img;
@@ -122,7 +118,6 @@ public class SnakeGame extends ApplicationAdapter {
 			if (TimeUtils.nanosToMillis(TimeUtils.timeSinceNanos(lastMove)) > MOVE_MILLISECONDS) {
 				if (dirQueue.size() > 0) {
 					Direction direction = dirQueue.remove(0);
-//					if (!((direction == Direction.NORTH && game.getDirection() == Direction.SOUTH) || (direction == Direction.EAST && game.getDirection() == Direction.WEST) || (di)))
 					boolean shouldSwitch = switch (direction) {
 						case NORTH -> game.getDirection() != Direction.SOUTH;
 						case EAST  -> game.getDirection() != Direction.WEST;
@@ -155,6 +150,5 @@ public class SnakeGame extends ApplicationAdapter {
 	@Override
 	public void dispose () {
 		batch.dispose();
-		img.dispose();
 	}
 }

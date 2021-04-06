@@ -25,8 +25,8 @@ public class Coord {
     }
 
     public void setCoord(int newX, int newY) {
-        x = newX;
-        y = newY;
+        x(newX);
+        y(newY);
     }
 
     public Coord copy() {
